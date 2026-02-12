@@ -1,0 +1,316 @@
+/* ============================================
+   PINJAMDULU - SIMPLE & CLEAN STYLING
+   ============================================ */
+
+/* ============================================
+   GENERAL STYLES
+   ============================================ */
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #004ba0;
+    --success-color: #27ae60;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --info-color: #3498db;
+    --light-bg: #f8f9fa;
+    --dark-text: #2d3748;
+    --border-color: #e2e8f0;
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --card-shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+.table {
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(102, 126, 234, 0.05);
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* ============================================
+   BADGES & TAGS
+   ============================================ */
+.badge {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.badge.bg-success {
+    background-color: var(--success-color) !important;
+}
+
+.badge.bg-danger {
+    background-color: var(--danger-color) !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--warning-color) !important;
+    color: white !important;
+}
+
+.badge.bg-info {
+    background-color: var(--info-color) !important;
+}
+
+/* ============================================
+   BUTTONS ENHANCEMENT
+   ============================================ */
+.btn {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    box-shadow: var(--card-shadow);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0052a3;
+    box-shadow: var(--card-shadow-hover);
+    color: white;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    box-shadow: var(--card-shadow);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #229954;
+    box-shadow: var(--card-shadow-hover);
+    color: white;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    box-shadow: var(--card-shadow);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    box-shadow: var(--card-shadow-hover);
+    color: white;
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    color: white;
+    box-shadow: var(--card-shadow);
+}
+
+.btn-warning:hover {
+    background-color: #d68910;
+    box-shadow: var(--card-shadow-hover);
+    color: white;
+}
+
+.btn-info {
+    background-color: var(--info-color);
+    box-shadow: var(--card-shadow);
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #2980b9;
+    box-shadow: var(--card-shadow-hover);
+    color: white;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+/* ============================================
+   FORM CONTROLS
+   ============================================ */
+.form-control,
+.form-select {
+    border: 2px solid #e2e8f0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+/* ============================================
+   ALERTS
+   ============================================ */
+.alert {
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    border-left: 4px solid transparent;
+}
+
+.alert-success {
+    background-color: rgba(39, 174, 96, 0.1);
+    border-left-color: var(--success-color);
+    color: #22543d;
+}
+
+.alert-danger {
+    background-color: rgba(231, 76, 60, 0.1);
+    border-left-color: var(--danger-color);
+    color: #742a2a;
+}
+
+.alert-warning {
+    background-color: rgba(243, 156, 18, 0.1);
+    border-left-color: var(--warning-color);
+    color: #7c2d12;
+}
+
+.alert-info {
+    background-color: rgba(52, 152, 219, 0.1);
+    border-left-color: var(--info-color);
+    color: #0c3e7a;
+}
+
+/* ============================================
+   PAGINATION
+   ============================================ */
+.pagination {
+    gap: 5px;
+}
+
+.page-link {
+    color: var(--primary-color);
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-light-primary {
+    background-color: rgba(102, 126, 234, 0.1) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.shadow-sm {
+    box-shadow: var(--card-shadow) !important;
+}
+
+.shadow {
+    box-shadow: var(--card-shadow-hover) !important;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 768px) {
+    .table {
+        font-size: 0.85rem;
+    }
+
+    .table thead th {
+        padding: 10px 8px;
+    }
+
+    .table td {
+        padding: 10px 8px;
+    }
+
+    .btn-sm {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-responsive {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
